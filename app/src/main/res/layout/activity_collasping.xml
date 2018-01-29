@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -14,9 +15,13 @@
             android:id="@+id/ctl"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="@color/colorAccent"
+            app:contentScrim="?attr/colorPrimary"
             app:title="toolbartest"
-            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:expandedTitleMarginStart="5dp"
+            app:collapsedTitleGravity="left"
+            app:expandedTitleTextAppearance="@style/CollaspingTextAppearance2"
+            app:collapsedTitleTextAppearance="@style/CollaspingTextAppearance">
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -43,16 +48,18 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <include layout="@layout/content_scrolling"
+        />
+
 <android.support.design.widget.FloatingActionButton
     android:id="@+id/fab"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:src="@drawable/float_test"
-    app:layout_anchor="@id/ctl"
+    app:layout_anchor="@id/appbar"
     app:layout_anchorGravity="bottom|end"
     android:layout_margin="10dp"
-    />
-    <include layout="@layout/content_scrolling"
-        />
+    app:srcCompat="@drawable/float_test"
+    tools:ignore="VectorDrawableCompat" />
+
 
 </android.support.design.widget.CoordinatorLayout>
