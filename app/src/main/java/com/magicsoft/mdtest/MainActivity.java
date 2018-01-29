@@ -24,4 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public void collasping(View view) {
         startActivity(new Intent(this,CollaspingActivity.class));
     }
+
+    public void footerbehaivor(View view) {
+        startActivity(new Intent(this,FootBehaivorActivity.class));
+    }
 }
