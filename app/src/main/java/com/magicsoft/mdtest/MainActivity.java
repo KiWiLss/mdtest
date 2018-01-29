@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
     public void snackbar(View view) {
         startActivity(new Intent(this,SnakeBarActivity.class));
     }
+
+    public void collasping(View view) {
+        startActivity(new Intent(this,CollaspingActivity.class));
+    }
 }

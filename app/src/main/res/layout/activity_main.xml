@@ -26,6 +26,12 @@
             android:textAllCaps="false"
             android:onClick="snackbar"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="collasping"
+            android:textAllCaps="false"
+            android:onClick="collasping"/>
     </LinearLayout>
 
 
