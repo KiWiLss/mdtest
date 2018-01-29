@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
     public void scroll(View view) {
         startActivity(new Intent(this,ScrollingActivity.class));
     }
+
+    public void snackbar(View view) {
+        startActivity(new Intent(this,SnakeBarActivity.class));
+    }
 }
