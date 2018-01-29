@@ -24,6 +24,7 @@
         <activity android:name=".SnakeBarActivity"/>
         <activity android:name=".CollaspingActivity"/>
         <activity android:name=".FootBehaivorActivity"/>
+        <activity android:name=".TabLayoutActivity"/>
     </application>
 
 </manifest>

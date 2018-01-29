@@ -28,4 +28,8 @@ public class MainActivity extends AppCompatActivity {
     public void footerbehaivor(View view) {
         startActivity(new Intent(this,FootBehaivorActivity.class));
     }
+
+    public void tablayout(View view) {
+        startActivity(new Intent(this,TabLayoutActivity.class));
+    }
 }

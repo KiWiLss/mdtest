@@ -18,7 +18,7 @@
             app:contentScrim="?attr/colorPrimary"
             app:title="toolbartest"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:expandedTitleMarginStart="5dp"
+
             app:collapsedTitleGravity="left"
             app:expandedTitleTextAppearance="@style/CollaspingTextAppearance2"
             app:collapsedTitleTextAppearance="@style/CollaspingTextAppearance">
