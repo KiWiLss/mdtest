@@ -6,6 +6,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:windowBackground">@color/windowBackground</item>-->
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.App</item>-->
+    </style>
+
+    <style name="ActionButton.Overflow.App" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -26,5 +33,9 @@
     <style name="CollaspingTextAppearance2">
         <item name="android:textSize">17sp</item>
         <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="CollapsingToolbarTitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/transparent</item>
     </style>
 </resources>

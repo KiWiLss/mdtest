@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarTitleStyle"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="科技之巅"
+         >
+
+            <ImageView
+                android:id="@+id/iv_book_image"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:transitionName="transition_book_img"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.8"
+                android:src="@drawable/float_test"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:contentInsetStartWithNavigation="0dp"
+                app:contentInsetStart="0dp"/>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/content_scrolling" />
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+
+
+
+        &lt;!&ndash;<LinearLayout&ndash;&gt;
+            &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:orientation="vertical"&ndash;&gt;
+            &lt;!&ndash;android:padding="10dp">&ndash;&gt;
+
+            &lt;!&ndash;<LinearLayout&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:orientation="horizontal">&ndash;&gt;
+
+                &lt;!&ndash;<TextView&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/tv_title"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="#292929"&ndash;&gt;
+                    &lt;!&ndash;android:textSize="18sp"&ndash;&gt;
+                    &lt;!&ndash;/>&ndash;&gt;
+
+                &lt;!&ndash;<TextView&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/tv_rating"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginTop="2dp"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="#FF6347"&ndash;&gt;
+                    &lt;!&ndash;android:textSize="14sp" />&ndash;&gt;
+            &lt;!&ndash;</LinearLayout>&ndash;&gt;
+
+
+            &lt;!&ndash;<TextView&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/tv_msg"&ndash;&gt;
+                &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_marginTop="2dp"&ndash;&gt;
+                &lt;!&ndash;android:textColor="#575757"&ndash;&gt;
+                &lt;!&ndash;android:textSize="12sp" />&ndash;&gt;
+
+
+        &lt;!&ndash;</LinearLayout>&ndash;&gt;
+
+        &lt;!&ndash;<android.support.design.widget.TabLayout&ndash;&gt;
+            &lt;!&ndash;android:id="@+id/sliding_tabs"&ndash;&gt;
+            &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;app:tabGravity="fill"&ndash;&gt;
+            &lt;!&ndash;app:tabMode="scrollable"&ndash;&gt;
+            &lt;!&ndash;app:tabSelectedTextColor="#292929" />&ndash;&gt;
+
+        &lt;!&ndash;<android.support.v4.view.ViewPager&ndash;&gt;
+            &lt;!&ndash;android:id="@+id/viewpager"&ndash;&gt;
+            &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="match_parent" />&ndash;&gt;
+    </LinearLayout>
+-->
+
+</android.support.design.widget.CoordinatorLayout>

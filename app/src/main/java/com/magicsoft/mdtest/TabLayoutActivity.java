@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 
 import com.magicsoft.mdtest.fragment.TabLayoutFg;
@@ -28,6 +29,7 @@ public class TabLayoutActivity extends AppCompatActivity {
     ViewPager mVp;
     private ArrayList<String> mTitle;
     private ArrayList<Fragment> mFgList;
+    @BindView(R.id.srl)SwipeRefreshLayout mSrl;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,7 +49,18 @@ public class TabLayoutActivity extends AppCompatActivity {
         mVp.setAdapter(new MyAdapter(getSupportFragmentManager()));
         mTb.setupWithViewPager(mVp);
 
-
+        mSrl.setEnabled(false);
+        mSrl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mSrl.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mSrl.setRefreshing(false);
+                    }
+                }, 3000);
+            }
+        });
     }
 
     class MyAdapter extends FragmentPagerAdapter {

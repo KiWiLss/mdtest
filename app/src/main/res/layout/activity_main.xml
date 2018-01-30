@@ -44,6 +44,20 @@
             android:text="tablayout"
             android:textAllCaps="false"
             android:onClick="tablayout"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="collaspingTest"
+            android:textAllCaps="false"
+            android:onClick="collaspingTest"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bookdetail"
+            android:textAllCaps="false"
+            android:onClick="bookdetail"/>
     </LinearLayout>
 
 

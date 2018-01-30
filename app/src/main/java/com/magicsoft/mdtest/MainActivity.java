@@ -32,4 +32,12 @@ public class MainActivity extends AppCompatActivity {
     public void tablayout(View view) {
         startActivity(new Intent(this,TabLayoutActivity.class));
     }
+
+    public void collaspingTest(View view) {
+        startActivity(new Intent(this,CollaspingTestActivity.class));
+    }
+
+    public void bookdetail(View view) {
+        startActivity(new Intent(this,BookDetailActivity.class));
+    }
 }

@@ -49,7 +49,8 @@ public class CollaspingActivity extends AppCompatActivity {
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                onBackPressed();
+                //finish();
             }
         });
 

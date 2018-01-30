@@ -1,39 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/srl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <android.support.design.widget.AppBarLayout
+
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:title="Tablay"
-            app:titleTextColor="#fff"
-            app:layout_scrollFlags="scroll|enterAlways|snap">
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Tablay"
+                app:titleTextColor="#fff"
+                app:layout_scrollFlags="scroll"
+                app:contentInsetStart="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/colorAccent"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/colorPrimary"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#0f0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#ff0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="#0f0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="#ff0"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tb"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+            </android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
 
 
-        </android.support.v7.widget.Toolbar>
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tb"
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
             android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-        </android.support.design.widget.TabLayout>
-
-    </android.support.design.widget.AppBarLayout>
-
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 
 
-</android.support.design.widget.CoordinatorLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
