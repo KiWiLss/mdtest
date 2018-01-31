@@ -73,6 +73,7 @@ public class TabLayoutActivity extends AppCompatActivity {
                     mSrl.setEnabled(true);
                 }else {
                     mSrl.setEnabled(false);
+                    mSrl.setRefreshing(false);
                 }
             }
         });
