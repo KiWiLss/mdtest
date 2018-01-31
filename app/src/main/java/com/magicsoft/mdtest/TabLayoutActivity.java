@@ -2,6 +2,7 @@ package com.magicsoft.mdtest;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -27,6 +28,7 @@ public class TabLayoutActivity extends AppCompatActivity {
     TabLayout mTb;
     @BindView(R.id.vp)
     ViewPager mVp;
+    @BindView(R.id.appbar)AppBarLayout mAppbar;
     private ArrayList<String> mTitle;
     private ArrayList<Fragment> mFgList;
     @BindView(R.id.srl)SwipeRefreshLayout mSrl;
@@ -49,7 +51,9 @@ public class TabLayoutActivity extends AppCompatActivity {
         mVp.setAdapter(new MyAdapter(getSupportFragmentManager()));
         mTb.setupWithViewPager(mVp);
 
-        mSrl.setEnabled(false);
+        //mSrl.setEnabled(false);
+        //设置样式刷新显示的位置
+        mSrl.setProgressViewOffset(true, -20, 100);
         mSrl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -61,6 +65,18 @@ public class TabLayoutActivity extends AppCompatActivity {
                 }, 3000);
             }
         });
+
+        mAppbar.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                if (verticalOffset>=0){
+                    mSrl.setEnabled(true);
+                }else {
+                    mSrl.setEnabled(false);
+                }
+            }
+        });
+
     }
 
     class MyAdapter extends FragmentPagerAdapter {
