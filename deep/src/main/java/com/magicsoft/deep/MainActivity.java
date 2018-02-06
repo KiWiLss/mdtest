@@ -1,6 +1,7 @@
 package com.magicsoft.deep;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -31,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         deepImage.asFile();
 
+    }
+
+    public void constraint(View view) {
+        startActivity(new Intent(this,ConstraintActivity.class));
     }
 }

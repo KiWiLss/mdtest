@@ -33,6 +33,7 @@
         <activity android:name=".CollaspingTestActivity"/>
         <activity android:name=".BookDetailActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".TopBehaviorActivity"/>
     </application>
 
 </manifest>
