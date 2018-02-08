@@ -37,4 +37,8 @@ public class MainActivity extends AppCompatActivity {
     public void constraint(View view) {
         startActivity(new Intent(this,ConstraintActivity.class));
     }
+
+    public void edit(View view) {
+        startActivity(new Intent(this,EditActivity.class));
+    }
 }
