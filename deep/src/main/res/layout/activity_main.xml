@@ -29,6 +29,12 @@
           android:layout_height="wrap_content"
           android:text="edit"
           android:onClick="edit"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="vertify"
+          android:onClick="vertify"/>
    </LinearLayout>
 
 

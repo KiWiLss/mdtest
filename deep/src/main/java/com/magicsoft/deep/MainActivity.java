@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.deep.imagelib.DeepImage;
 import com.deep.imagelib.beans.ImageConfigure;
+import com.magicsoft.deep.code.VertifyActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,5 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void edit(View view) {
         startActivity(new Intent(this,EditActivity.class));
+    }
+
+    public void vertify(View view) {
+        startActivity(new Intent(this,VertifyActivity.class));
     }
 }
