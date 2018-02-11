@@ -104,11 +104,15 @@ public class CodeUtils {
         paint.setStrokeWidth(1);  
         paint.setColor(color);  
         canvas.drawLine(startX, startY, stopX, stopY, paint);  
-    }  
-  
-    //随机颜色  
-    private int randomColor() {  
-        mBuilder.delete(0, mBuilder.length()); //使用之前首先清空内容  
+    }
+
+    /**随机颜色
+     * @return
+     */
+
+    private int randomColor() {
+        //使用之前首先清空内容
+        mBuilder.delete(0, mBuilder.length());
   
         String haxString;  
         for (int i = 0; i < 3; i++) {  

@@ -6,8 +6,8 @@ android {
 
 
     defaultConfig {
-        applicationId "com.magicsoft.deep"
-        minSdkVersion 16
+        applicationId "com.magicsoft.qiuitest"
+        minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -34,6 +34,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    compile 'com.deep:deepimg:1.0'
-    compile 'com.github.yalantis:jellytoolbar:v1.0'
+
+    compile 'com.qmuiteam:qmui:1.0.6'
 }

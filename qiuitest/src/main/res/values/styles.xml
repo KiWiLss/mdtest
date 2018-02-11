@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+
+        <item name="qmui_config_color_blue">@color/colorPrimary</item><!--这是一个BUG覆盖了colorAccent的效果-->
+        <item name="qmui_config_color_red">@color/colorPrimaryDark</item>
+        <item name="qmui_config_color_background">@color/colorAccent</item>
+    </style>
+
+</resources>
