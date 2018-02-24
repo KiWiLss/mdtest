@@ -28,5 +28,7 @@ public class SecondActivity extends AppCompatActivity {
 
         mTv = (TextView) findViewById(R.id.tv_second_one);
 
+
+
     }
 }

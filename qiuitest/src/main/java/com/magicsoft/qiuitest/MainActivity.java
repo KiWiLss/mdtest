@@ -1,14 +1,13 @@
 package com.magicsoft.qiuitest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.magicsoft.qiuitest.bank.BankInfo;
-import com.magicsoft.qiuitest.bank.BankInfoBean;
+import com.magicsoft.qiuitest.thread.ThreadActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void second(View view) {
-        //卡号
+       /* //卡号
         char[] cardNumber = {'6', '2', '2', '8', '4', '8', '0'};
 
         //获取银行卡的信息
@@ -83,8 +82,13 @@ public class MainActivity extends AppCompatActivity {
             Log.e("MMM", "second: "+bankinfobean.getBankName()+"||"+bankinfobean.getCardType() );
         }else {
             Log.e("MMM", "second: "+bank);
-        }
+        }*/
 
+       startActivity(new Intent(this,SecondActivity.class));
 
+    }
+
+    public void thread(View view) {
+        startActivity(new Intent(this,ThreadActivity.class));
     }
 }
