@@ -25,5 +25,8 @@ public class ThreadDemo extends Thread{
         ThreadDemo threadDemo = new ThreadDemo();
 
         threadDemo.start();
+
+        System.out.println(threadDemo.getPriority());
+
     }
 }

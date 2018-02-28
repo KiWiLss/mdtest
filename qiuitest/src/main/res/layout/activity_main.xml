@@ -49,6 +49,23 @@
            android:layout_height="wrap_content"
            android:text="thread"
            android:onClick="thread"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="first"
+           android:onClick="first"
+           android:visibility="visible"/>
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="1200dp"
+           android:background="#0f0"/>
+
+       <TextView
+           android:id="@+id/tv_main_bottom"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="底部"/>
    </LinearLayout>
 
 </ScrollView>

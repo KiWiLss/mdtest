@@ -7,12 +7,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.magicsoft.qiuitest.activity.FirstActivity;
 import com.magicsoft.qiuitest.thread.ThreadActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTvOne;
     private EditText etBank;
+    private TextView mTvBottom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
         mTvOne = (TextView) findViewById(R.id.tv_main_one);
         etBank = (EditText) findViewById(R.id.et_main_bank);
+
+        mTvBottom = (TextView) findViewById(R.id.tv_main_bottom);
+
+
 
 
     }
@@ -90,5 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void thread(View view) {
         startActivity(new Intent(this,ThreadActivity.class));
+    }
+
+    public void first(View view) {
+        startActivity(new Intent(this,FirstActivity.class));
     }
 }

@@ -19,6 +19,9 @@
 
         <activity android:name=".SecondActivity"/>
         <activity android:name=".thread.ThreadActivity"/>
+
+        <activity android:name=".activity.FirstActivity"/>
+        <activity android:name=".activity.FragmentActivity"/>
     </application>
 
 </manifest>

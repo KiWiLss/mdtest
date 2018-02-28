@@ -1,81 +1,86 @@
-package com.magicsoft.qiuitest;
+package com.magicsoft.qiuitest.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.TextView;
+import android.view.View;
+
+import com.magicsoft.qiuitest.R;
+import com.magicsoft.qiuitest.SecondActivity;
 
 /**
  * <pre>
  *     @author : Lss winding
  *     @e-mail : kiwilss@163.com
- *     @time   : 2018/2/23
+ *     @time   : 2018/2/25
  *     @desc   : ${DESCRIPTION}
  *     @version: ${VERSION}
  * </pre>
  */
 
 
-public class SecondActivity extends AppCompatActivity {
-
+public class FirstActivity extends AppCompatActivity {
     public static final String TAG = "MMM";
-    private TextView mTv;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_first);
 
+        Log.e(TAG, "first---onCreate: ");
 
-        mTv = (TextView) findViewById(R.id.tv_second_one);
+        for (int i = 0; i < 10; i++) {
+            Log.e(TAG, "onCreate: "+i );
+            i++;
+        }
 
-
-        Log.e(TAG, "second---onCreate: " );
         Log.e(TAG, "onCreate: 11111" );
         Log.e(TAG, "onCreate: 22222" );
         Log.e(TAG, "onCreate: 33333" );
-
     }
+
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.e(TAG, "second---onRestart: " );
+        Log.e(TAG, "first---onRestart: " );
     }
-
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.e(TAG, "sencond---onStart: " );
+        Log.e(TAG, "first---onStart: " );
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e(TAG, "sencond---onResume: " );
+        Log.e(TAG, "first---onResume: " );
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.e(TAG, "sencond---onPause: " );
+        Log.e(TAG, "first---onPause: " );
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.e(TAG, "sencond---onStop: " );
+        Log.e(TAG, "first---onStop: " );
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.e(TAG, "sencond---onDestroy: " );
+        Log.e(TAG, "first---onDestroy: " );
     }
 
-
+    public void second(View view) {
+        startActivity(new Intent(this, SecondActivity.class));
+    }
 
 
 }
