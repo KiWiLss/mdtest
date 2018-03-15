@@ -36,4 +36,7 @@ dependencies {
     compile 'com.jakewharton:butterknife:latest.release'
     annotationProcessor 'com.jakewharton:butterknife-compiler:latest.release'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
+
+    //compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.33'
+
 }
