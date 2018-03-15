@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.magicsoft.qiuitest.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+           android:id="@+id/test1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingBottom="10dp"
+           android:paddingLeft="16dp"
+           android:paddingRight="16dp"
+           android:paddingTop="10dp"
+           android:text="@string/title_one"
+           app:qmui_isRadiusAdjustBounds="true"/>
+
+
+       <android.support.design.widget.FloatingActionButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+       <TextView
+           android:id="@+id/tv_main_one"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="上一个返回"/>
+
+       <EditText
+           android:id="@+id/et_main_bank"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="输入银行卡"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="第二个"
+           android:onClick="second"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="thread"
+           android:onClick="thread"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="first"
+           android:onClick="first"
+           android:visibility="visible"/>
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="1200dp"
+           android:background="#0f0"/>
+
+       <TextView
+           android:id="@+id/tv_main_bottom"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="底部"/>
+   </LinearLayout>
+
+</ScrollView>

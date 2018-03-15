@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QiUITest</string>
+    <string name="title_one">圆角为高度的一半</string>
+</resources>

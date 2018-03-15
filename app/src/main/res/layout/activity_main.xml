@@ -58,6 +58,12 @@
             android:text="bookdetail"
             android:textAllCaps="false"
             android:onClick="bookdetail"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="behaviorTop"
+            android:textAllCaps="false"
+            android:onClick="behaviorTop"/>
     </LinearLayout>
 
 
